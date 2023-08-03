@@ -86,60 +86,61 @@ also, nodePort range is defined in k8s, it has to be between 30000 - 32767
 
 checking nodes and pods 
 ---
-  kubectl get node
-  kubectl get pod
+    kubectl get node
+    kubectl get pod
 ---
 
 apply the config files 
 ---
-  kubectl apply -f mongo-config.yaml
-  kubectl apply -f mongo-secret.yaml
-  kubectl apply -f mongo.yaml
-  kubectl apply -f webapp.yaml
+    kubectl apply -f mongo-config.yaml
+    kubectl apply -f mongo-secret.yaml
+    kubectl apply -f mongo.yaml
+    kubectl apply -f webapp.yaml
 ---
 
 check all the components deployed in the cluster 
 ---
-  kubectl get all
-  kubectl get configmap
-  kubectl get secret
+    kubectl get all
+    kubectl get configmap
+    kubectl get secret
 ---
 
 had an issue with webapp : CreateContainerConfigError
 ---
-  kubectl describe pod/webapp-deployment-b55c9d7f7-fjzrl
+    kubectl describe pod/webapp-deployment-b55c9d7f7-fjzrl
 ---
 
 found out the issue with mongo-config, and re-applied with 
 ---
-  kubectl apply -f mongo-config.yaml
-  kubectl apply -f webapp.yaml
+    kubectl apply -f mongo-config.yaml
+    kubectl apply -f webapp.yaml
 ---
 
 all looks ok now with 
 ---
-  kubectl get all
+    kubectl get all
 ---
 
-check logs 
+to check logs 
 ---
-  kubectl logs pod/webapp-deployment-b55c9d7f7-fjzrl
+    kubectl logs pod/webapp-deployment-b55c9d7f7-fjzrl
 ---
 
 to access the application 
 ---
-  minikube ip
+    minikube ip
 ---
+
 or
 ---
-  kubectl get node
-  kubectl get node -o wide
+    kubectl get node
+    kubectl get node -o wide
 ---
 
 to access the webapp from browser : 
 ---
-  minikube service list
-  minikube service webapp-service --url
+    minikube service list
+    minikube service webapp-service --url
 ---
 
 take the url from here and access from website.
