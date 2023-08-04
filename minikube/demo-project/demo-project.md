@@ -143,6 +143,11 @@ to access the webapp from browser :
     minikube service webapp-service --url
 ---
 
+or we can just open it from the terminal 
+---
+    minikube service webapp-service
+---
+
 take the url from here and access from website.
 
 Done!

@@ -36,6 +36,8 @@
 
 `kubectl get deployment`
 
+`kubectl get deployment webapp-deployment -o yaml > webapp_deployment_result.yaml`
+
 ### delete with config
 `kubectl delete -f nginx-deployment.yaml`
 
