@@ -143,6 +143,8 @@ to access the webapp from browser :
     minikube service webapp-service --url
 ---
 
+using docker desktop as the driver for running minikube, I realize that i cannot directly key in minikube IP on my browser and access my app, instead it is exposed via the docker driver IP 127.0.0.1 which then directs it to the minikube IP 
+
 or we can just open it from the terminal 
 ---
     minikube service webapp-service
