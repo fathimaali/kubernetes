@@ -10,3 +10,4 @@ CKAD EXERCISES : https://github.com/dgkanatsios/CKAD-exercises/tree/main
 
 CKAD practice questions : <https://github.com/bbachi/CKAD-Practice-Questions>
 
+Tasks : <https://kubernetes.io/docs/tasks/>
