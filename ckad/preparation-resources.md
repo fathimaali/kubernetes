@@ -11,3 +11,11 @@ CKAD EXERCISES : https://github.com/dgkanatsios/CKAD-exercises/tree/main
 CKAD practice questions : <https://github.com/bbachi/CKAD-Practice-Questions>
 
 Tasks : <https://kubernetes.io/docs/tasks/>
+
+Keep the code - 20KLOUD handy while registering for the CKA or CKAD exams at Linux Foundation to get a 20% discount.
+
+Exam info : 
+https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2
+
+exam tips : 
+https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
