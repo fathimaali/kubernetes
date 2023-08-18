@@ -19,16 +19,16 @@
 
 ubuntu is a container image, with CMD [bash], it starts and it exits. 
 
----
+```
     docker run ubuntu [CMD]
----
+```
 
 changing CMD at runtime 
 example: making the ubuntu 
 
----
+```
     docker run ubuntu sleep 5 
----
+```
 
 if we wanna make this change permanent we change the container image and create new image ubuntu-sleeper
 FROM ubuntu

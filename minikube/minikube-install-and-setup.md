@@ -10,18 +10,18 @@
 >    <https://docs.docker.com/engine/install/>
 
 - once that is done, we can start the minikube cluster using 
----
+```
     minikube start --driver docker
----
+```
 
 - check status 
----
+```
     minikube status
----
+```
 
 - check nodes
----
+```
     minikube get node
----
+```
 
 all looks ok here.
