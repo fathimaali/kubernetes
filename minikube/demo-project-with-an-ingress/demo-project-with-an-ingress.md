@@ -12,7 +12,7 @@ verify this, which is running under kube-system namespace
 
 ### create the service that the ingress component wants to direct to
 
-<https://github.com/fathimaali/kubernetes/blob/main/minikube/demo-project-with-an-ingress/webapp-with-an-ingress.yaml>
+[webapp-with-an-ingress.yaml](/minikube/demo-project-with-an-ingress/webapp-with-an-ingress.yaml) 
 
 ```
     kubectl apply -f webapp-with-an-ingress.yaml
@@ -26,7 +26,7 @@ our app deployment and the service are up and running
 
 write the config : 
 
-<https://github.com/fathimaali/kubernetes/blob/main/minikube/demo-project-with-an-ingress/ingress-webapp.yaml>
+[ingress-webapp](minikube/demo-project-with-an-ingress/ingress-webapp.yaml)
 
 ```
     kubectl apply -f ingres-webapp.yaml
