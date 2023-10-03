@@ -2,6 +2,11 @@
 
 ```
     alias k=kubectl 
+    alias ka='kubectl apply'
+    alias kc='kubectl create'
+    alias kg='kubectl get'
+    alias kdl='kubcetl delete'
+    alias kds='kubectl describe'
 ```
 saves times from having to type it everytime for command execution
 
@@ -35,3 +40,4 @@ Use the above two in combination along with Linux output redirection to generate
 ```
     kubectl run nginx --image=nginx --dry-run=client -o yaml > nginx-pod.yaml
 ```
+
