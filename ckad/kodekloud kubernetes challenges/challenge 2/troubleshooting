@@ -1,0 +1,27 @@
+kubectl get all
+
+k config view 
+
+vim /root/.kube/config # change the port of server from 6433 to 6443
+
+k get all
+
+cat /var/log/pods/kube-system_kube-apiserver-controlplane_3e3f5107b4d5f427d7445cc08435aa06/kube-apiserver/0.log 
+    
+    this log indicated that the api server is under issue. 
+    its not able to find the certificate correctly
+    
+vim /etc/kubernetes/manifests/kube-apiserver.yaml
+
+    --client-ceritificate-authority=ca.crt
+
+watch crictl ps
+
+    watched kube-apiserver is running again now
+
+node01 is not able to schedule pods
+
+k edit node node01
+
+    disable the noschedule parameter
+

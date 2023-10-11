@@ -1,0 +1,32 @@
+vim /root/.kube/config
+
+k config view
+
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://controlplane:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: martin
+  name: developer
+- context:
+    cluster: kubernetes
+    namespace: development
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: developer
+kind: Config
+preferences: {}
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: DATA+OMITTED
+    client-key-data: DATA+OMITTED
+- name: martin
+  user:
+    client-certificate: /root/martin.crt
+    client-key: /root/martin.key
